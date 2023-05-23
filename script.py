@@ -25,8 +25,17 @@ transaction6 = {
 
 mempool = [transaction1, transaction2, transaction3, transaction4, transaction5, transaction6]
 
-# add your code below
+# Add your code below
+my_transaction = {
+  'amount': 45 ,
+  'sender': 'bobby',
+  'receiver': 'timmy' }
 
+mempool.append(my_transaction)
+
+print(mempool)
+
+block_transactions = [transaction1, transaction4, my_transaction]
 
 
 
