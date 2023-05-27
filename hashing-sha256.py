@@ -32,3 +32,5 @@ file_hash = calculate_file_hash(file_path)
 # Print the result
 if file_hash:
     print("File Hash:", file_hash)
+
+print
