@@ -29,8 +29,12 @@ file_path = input("Enter the file path: ")
 # Calculate the hash of the file
 file_hash = calculate_file_hash(file_path)
 
+# Calculate the has of the input file
+calculated_hash = calculate_file_hash(text)
+
+# Prompt the user for the expected 
+
 # Print the result
 if file_hash:
     print("File Hash:", file_hash)
 
-print
