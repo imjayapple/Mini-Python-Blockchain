@@ -32,9 +32,13 @@ file_hash = calculate_file_hash(file_path)
 # Calculate the has of the input file
 calculated_hash = calculate_file_hash(text)
 
-# Prompt the user for the expected 
+text = input("Enter the text to hash: ")
 
-# Print the result
-if file_hash:
-    print("File Hash:", file_hash)
+# Prompt the user for the expected hash
+expected_hash = input("Enter the expected hash: ")
 
+# Verify the hash
+if calculated_hash == expected_hash:
+    print("Hash verification passed.")
+else:
+    print("Hash verification failed.")
