@@ -14,3 +14,13 @@ num_iterations = int(input("Enter the number of iterations for the hash chain: "
 
 # Initialize the current text as the original input
 current_text = text
+
+# Perform the hash chain
+for i in range(num_iterations):
+    current_hash = calculate_text_hash(current_text)
+    print("Iteration", i+1, "Hash:", current_hash)
+    current_text = current_hash
+
+# Final hash result
+final_hash = current_hash
+print("Final Hash Result:", final_hash)
