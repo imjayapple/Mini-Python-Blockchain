@@ -13,4 +13,3 @@ class Block:
         return hashlib.sha256(hash_data.encode()).hexdigest()
     
 class Blockchain:
-    
